@@ -69,12 +69,8 @@ public class AccountTitleView: UIView {
 public struct AccountTitleAppearance {
     fileprivate let accountTitleFont: UIFont
     fileprivate let accountNumberFont: UIFont
-    
-    private static let defaultATitleFontSize: CGFloat = 15.0
-    private static let defaultANumberFontSize: CGFloat = 13.0
-    
-    
-    init(accountTitleFont: UIFont = UIFont.systemFont(ofSize: defaultATitleFontSize, weight: .medium), accountNumberFont: UIFont = UIFont.systemFont(ofSize: defaultANumberFontSize, weight: .regular)) {
+
+    init(accountTitleFont: UIFont = Fonts.medium(.large), accountNumberFont: UIFont = Fonts.regular(.medium)) {
         self.accountTitleFont = accountTitleFont
         self.accountNumberFont = accountNumberFont
     }

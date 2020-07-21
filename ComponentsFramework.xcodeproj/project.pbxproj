@@ -18,6 +18,10 @@
 		50163AB124C65B1900C9A883 /* String+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50163AAE24C65B1900C9A883 /* String+Styling.swift */; };
 		50163AB224C65B1900C9A883 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50163AAF24C65B1900C9A883 /* UIView+Nib.swift */; };
 		50163AB324C65B1900C9A883 /* Double+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50163AB024C65B1900C9A883 /* Double+Formatter.swift */; };
+		504C997A24C7212D00316C2B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C997924C7212D00316C2B /* RoundButton.swift */; };
+		504C997D24C7213F00316C2B /* AdvertisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C997B24C7213F00316C2B /* AdvertisingView.swift */; };
+		504C997E24C7213F00316C2B /* AdvertisingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504C997C24C7213F00316C2B /* AdvertisingView.xib */; };
+		50A167F124C7195D003C6626 /* FontsSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A167F024C7195D003C6626 /* FontsSizes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		50163AAE24C65B1900C9A883 /* String+Styling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Styling.swift"; sourceTree = "<group>"; };
 		50163AAF24C65B1900C9A883 /* UIView+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		50163AB024C65B1900C9A883 /* Double+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Formatter.swift"; sourceTree = "<group>"; };
+		504C997924C7212D00316C2B /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundButton.swift; path = ComponentsFramework/Components/RoundButton/RoundButton.swift; sourceTree = SOURCE_ROOT; };
+		504C997B24C7213F00316C2B /* AdvertisingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdvertisingView.swift; path = ComponentsFramework/Components/AdvertisingView/AdvertisingView.swift; sourceTree = SOURCE_ROOT; };
+		504C997C24C7213F00316C2B /* AdvertisingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AdvertisingView.xib; path = ComponentsFramework/Components/AdvertisingView/AdvertisingView.xib; sourceTree = SOURCE_ROOT; };
+		50A167F024C7195D003C6626 /* FontsSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontsSizes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,9 @@
 		50163A8624C6533600C9A883 /* ComponentsFramework */ = {
 			isa = PBXGroup;
 			children = (
+				504C997624C71FF300316C2B /* RoundButton */,
+				504C997124C71F5D00316C2B /* AdvertisingView */,
+				50A167F024C7195D003C6626 /* FontsSizes.swift */,
 				5011AC1124C6E32400AF3C16 /* RoundedView */,
 				5011AC0E24C6E30900AF3C16 /* CurrencyConfigurator */,
 				5011AC0B24C6E2F300AF3C16 /* AmountTextComponent */,
@@ -148,6 +159,23 @@
 				50163AAF24C65B1900C9A883 /* UIView+Nib.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		504C997124C71F5D00316C2B /* AdvertisingView */ = {
+			isa = PBXGroup;
+			children = (
+				504C997B24C7213F00316C2B /* AdvertisingView.swift */,
+				504C997C24C7213F00316C2B /* AdvertisingView.xib */,
+			);
+			path = AdvertisingView;
+			sourceTree = "<group>";
+		};
+		504C997624C71FF300316C2B /* RoundButton */ = {
+			isa = PBXGroup;
+			children = (
+				504C997924C7212D00316C2B /* RoundButton.swift */,
+			);
+			path = RoundButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5011AC0A24C6E2E200AF3C16 /* AccountTitleView.xib in Resources */,
+				504C997E24C7213F00316C2B /* AdvertisingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,11 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50A167F124C7195D003C6626 /* FontsSizes.swift in Sources */,
+				504C997D24C7213F00316C2B /* AdvertisingView.swift in Sources */,
 				50163AB224C65B1900C9A883 /* UIView+Nib.swift in Sources */,
 				50163AB324C65B1900C9A883 /* Double+Formatter.swift in Sources */,
 				5011AC1324C6E32C00AF3C16 /* RoundedView.swift in Sources */,
 				50163AB124C65B1900C9A883 /* String+Styling.swift in Sources */,
 				5011AC0D24C6E2FC00AF3C16 /* AmountTextView.swift in Sources */,
+				504C997A24C7212D00316C2B /* RoundButton.swift in Sources */,
 				5011AC0924C6E2E200AF3C16 /* AccountTitleView.swift in Sources */,
 				5011AC1024C6E31400AF3C16 /* CurrencyConfigurator.swift in Sources */,
 			);

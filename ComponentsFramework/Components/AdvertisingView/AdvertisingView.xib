@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdvertisingView" customModule="ComponentsSample" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImageView" destination="mnf-gT-4H1" id="JUD-Ol-7U3"/>
+                <outlet property="closeButton" destination="LrU-86-YXH" id="RYA-31-FU3"/>
+                <outlet property="moreInfoButton" destination="uyh-zU-FdM" id="Fnq-k8-fBI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mnf-gT-4H1">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrU-86-YXH">
+                    <rect key="frame" x="366" y="8" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="ors-yP-V4o"/>
+                        <constraint firstAttribute="height" constant="40" id="vWT-5t-3nj"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="closeButtonClicked:" destination="-1" eventType="touchUpInside" id="WBe-Bm-n9W"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyh-zU-FdM" customClass="RoundButton" customModule="ComponentsSample" customModuleProvider="target">
+                    <rect key="frame" x="16" y="180" width="46" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="fhN-bw-q7h"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="moreInfoButtonClicked:" destination="-1" eventType="touchUpInside" id="A1s-Qv-bqy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="LrU-86-YXH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="2wO-pq-mDb"/>
+                <constraint firstAttribute="trailing" secondItem="LrU-86-YXH" secondAttribute="trailing" constant="8" id="4bF-nu-qty"/>
+                <constraint firstItem="mnf-gT-4H1" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="CWY-En-1KG"/>
+                <constraint firstItem="uyh-zU-FdM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Ngo-Rp-zk6"/>
+                <constraint firstItem="mnf-gT-4H1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="S4e-rV-WNP"/>
+                <constraint firstItem="mnf-gT-4H1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZCU-mv-Fu1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uyh-zU-FdM" secondAttribute="bottom" constant="16" id="hFE-35-P5n"/>
+                <constraint firstItem="mnf-gT-4H1" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="hbB-4X-TtV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="88.058035714285708"/>
+        </view>
+    </objects>
+</document>

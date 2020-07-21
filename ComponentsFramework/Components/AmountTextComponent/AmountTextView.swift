@@ -11,7 +11,6 @@ import UIKit
 @IBDesignable
 public class AmountTextView: UIView {
     // MARK: -  class variables
-    private static let defaultAmountFontSize: CGFloat = 15.0
     private var amountLabel = UILabel(frame: CGRect.zero)
     
     // MARK: -  configuarble properties
@@ -93,7 +92,7 @@ public class AmountTextView: UIView {
     // MARK: - Setup And Update SubView
     private func setupView() {
         amountLabel.frame = bounds
-        amountLabel.font = UIFont.systemFont(ofSize: AmountTextView.defaultAmountFontSize, weight: .medium)
+        amountLabel.font = Fonts.medium(.large)
         amountLabel.textColor = .black
         amountLabel.textAlignment = .right
         amountLabel.minimumScaleFactor = 0.4
